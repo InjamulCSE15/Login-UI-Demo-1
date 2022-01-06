@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ 
+body {
+    background: #ecf0f1;
+    font-family: 'Open Sans', sans-serif;
+}
+ 
+.login {
+    width: 275px;
+    background: #ecf0f1;
+    padding: 0 30px 30px 30px;
+    margin: 60px auto;
+    text-align: center;
+    border-radius: 10px;
+    background: #ebebeb;
+    box-shadow: 5px 5px 10px #bcbcbc, -5px -5px 10px #ffffff;
+}
+ 
+span {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    top: -35px;
+    height: 80px;
+    width: 80px;
+    background: url("Images/User.png") center center no-repeat, #ececec;
+    background-size: 100%;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px #bcbcbc, -5px -5px 5px #ffffff;
+    /* box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); */
+
+    animation-name: spin;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+ 
+@keyframes spin {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+ 
+span:hover {
+    transition: ease-in-out 0.5s;
+    transform: scale(1.1);
+}
+ 
+h1 {
+    font-size: 24px;
+    /* font-weight: 100; */
+    margin-bottom: 30px;
+    /* ~ Additional CSS ~ */
+    color: #128ef3;
+    font-weight: bold;
+    text-shadow: 1px 1px #858585;
+}
+ 
+input {
+    width: 100%;
+    /* background: #bdc3c7; */
+    border: none;
+    /* height: 30px; */
+    margin-bottom: 15px;
+    border-radius: 5px;
+    /* text-align: center; */
+    font-size: 14px;
+    color: #7f8c8d;
+    /* Additional CSS  */
+    background-color: white;
+    height: 40px;
+    text-align: left;
+    padding-left: 15px;
+}
+ 
+input:focus {
+    outline: none;
+    /* Additional CSS */
+    color: #000;
+    /* background: #ebebeb; */
+    background: #fff;
+    box-shadow: inset 5px 5px 8px #d6d6d6, inset -5px -5px 8px #ffffff;
+}
+ 
+button {
+    width: 100%;
+    /* height: 30px; */
+    border: none;
+    background: #3498db;
+    color: #ffffff;
+    font-weight: 100;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    transition: all ease-in-out 0.2s;
+    border-bottom: 3px solid #2980b9;
+    /* Additional CSS */
+    height: 40px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
+}
+ 
+button:focus {
+    outline: none;
+}
+ 
+button:hover {
+    background: #29b929;
+    border-bottom: 3px solid #177517;
+    cursor: pointer;
+    font-size: medium;
+}
+ 
+h2 {
+    font-size: 0.75em;
+}
+ 
+h2:hover {
+    transition: ease-in-out 0.3s;
+    transform: scale(1.2);
+}
+ 
+.forgot {
+    color: #e74c3c;
+    text-decoration: none;
+    transition: all ease-in-out 0.2s;
+}
+ 
+.forgot:hover {
+    color: #c0392b;
+}
+
+.personalLink {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+}
